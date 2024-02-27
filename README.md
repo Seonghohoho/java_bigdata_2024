@@ -69,8 +69,8 @@
     - 파이썬 응용
         - 아스키 및 유니코드
         - 주소록 앱 만들기
-
-        ![주소록앱](https://github.com/Seonghohoho/java_bigdata_2024/blob/main/images/KakaoTalk_20240227_152639834.gif)
+        
+        ![주소록앱](https://raw.githubusercontent.com/Seonghohoho/java_bigdata_2024/main/images/bigdata01.gif)
 
         - Windows App 만들기 (PyQt 5)
 
