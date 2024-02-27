@@ -21,4 +21,4 @@ def search(dirName):
 if __name__ == '__main__':  # main entry
     search('C:/Source')  # OS 드라이브 경로에서 \는 되도록 쓰지말것
 
-    search('C:/Source')  # OS 드라이브 경로에서 \는 되도록 쓰지말것
+   
