@@ -74,4 +74,4 @@
 
         - Windows App 만들기 (PyQt 5)
 
-        ![QtApp] (https://github.com/Seonghohoho/java_bigdata_2024/blob/main/images/KakaoTalk_20240227_171112061)
+        ![QtApp] (https://github.com/Seonghohoho/java_bigdata_2024/blob/main/images/KakaoTalk_20240227_171112061.png)
