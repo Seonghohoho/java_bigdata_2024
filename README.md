@@ -71,3 +71,7 @@
         - 주소록 앱 만들기
 
         ![주소록앱](https://github.com/Seonghohoho/java_bigdata_2024/blob/main/images/KakaoTalk_20240227_152639834.gif)
+
+        - Windows App 만들기 (PyQt 5)
+
+        ![QtApp]
