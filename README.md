@@ -70,4 +70,4 @@
         - 아스키 및 유니코드
         - 주소록 앱 만들기
 
-        ![주소록앱] ![주소록앱](https://raw.githubusercontent.com/Seonghoho/java_bigdata_2024/main/images/KakaoTalk_20240227_152639834)
+        ![주소록앱](https://raw.githubusercontent.com/Seonghoho/java_bigdata_2024/main/images/KakaoTalk_20240227_152639834)
