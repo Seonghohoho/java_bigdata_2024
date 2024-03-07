@@ -1,9 +1,9 @@
 # file : p48_transApp.py
-# desc : PyQt5 스레드 학습용(스레드 사용안함)
-#pip install googletrans
-# 모듈,라이브러리 설치시 버전 업/다운, 버전을 기재해주면 됨 
-# > pip install googletrans==3.1.0a0
-# > pip install googletrans==4.0.orc1
+# desc : PyQt5 구글번역앱
+# > pip install googletrans
+# 모듈, 라이브러리 설치시 버전 업/다운, 버전을 기재해주면 됨!
+# > pip install gogoletrans==3.1.0a0
+# > pip install gogoletrans==4.0.0rc1
 
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
@@ -17,7 +17,7 @@ class qtApp(QWidget):
     def __init__(self) -> None: 
         super().__init__()
         self.initUI()
-        self.myTrans = Translator() # 구글번역기 객체 생성
+        self.myTrans = Translator() # 구글번역기 객체생성
 
     def initUI(self): # ui파일을 로드해서 화면디자인 사용
         uic.loadUi('./day07/transApp.ui', self)
@@ -29,10 +29,10 @@ class qtApp(QWidget):
         self.show()
 
     def btnTransClicked(self):
-        # QMessageBox.about(self, '번역','번역시작!!')
+        # QMessageBox.about(self, '번역', '번역시작!!')
         text = self.txtBaseText.text().strip()
         if len(text) != 0:
-            result = self.myTrans.translate(text, src='auto',dest='en')
+            result = self.myTrans.translate(text, src='auto', dest='en')
             self.txbResult.append(result.text)
 
     def closeEvent(self, QCloseEvent) -> None:

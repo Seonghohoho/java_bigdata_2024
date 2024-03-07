@@ -20,3 +20,4 @@ body = body.replace('java', 'python')
 f = open('./day03/test.txt', mode='w', encoding='utf-8')
 f.write(body)
 f.close()
+

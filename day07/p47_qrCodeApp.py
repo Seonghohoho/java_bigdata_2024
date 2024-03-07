@@ -1,6 +1,6 @@
-# file : p44_nothreadApp.py
-# desc : PyQt5 스레드 학습용(스레드 사용안함)
-#pip install qrcode
+# file : p47_qrCodeApp.py
+# desc : PyQt5 QR코드앱
+# > pip install qrcode
 
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
@@ -20,13 +20,12 @@ class qtApp(QWidget):
         self.setWindowIcon(QIcon('./images/windows.png'))
         # 버튼 시그널처리 
         self.btnGenerate.clicked.connect(self.btnGenerateClicked) # ui파일내 위젯은 자동완성X 
-
         self.show()
 
     def btnGenerateClicked(self):
         data = self.txtQrData.text()
 
-        if len(data.strip()) ==0:
+        if len(data.strip()) == 0:
             QMessageBox.about(self, '경고', '데이터 좀 입력해라.')
             return
         else:
@@ -34,7 +33,7 @@ class qtApp(QWidget):
             qrImage = qrcode.make(data)
             qrImage.save(imgPath)
             img = QPixmap(imgPath)
-            self.lblQrCode.setPixmap(QPixmap(img).scaledToWidth(300))
+            self.lblQrCode.setPixmap(QPixmap(img).scaledToWidth(300)) 
 
     def closeEvent(self, QCloseEvent) -> None:
         re = QMessageBox.question(self, '종료확인', '종료하시겠습니까?', QMessageBox.Yes|QMessageBox.No)

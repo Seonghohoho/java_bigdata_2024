@@ -1,9 +1,6 @@
-# file : p44_nothreadAPP.py
-# desc : PyQt5 스레드 학습용 (스레드 사용안함)
-'''
-설치 > pip install PyQt5
-설치 > pip install PyQt5Designer
-'''
+# file : p44_nothreadApp.py
+# desc : PyQt5 스레드 학습용(스레드 사용안함)
+
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import *
@@ -26,13 +23,13 @@ class qtApp(QWidget):
 
     def btnStartClicked(self):
         self.pgbTask.setValue(0) # 재설정
-        self.pgbTask.setRange(0, 999_999) # 프로그래스바 범위 설정
+        self.pgbTask.setRange(0, 999_999) # 프로그레스바 범위설정
         self.btnStart.setDisabled(True)
         # UI(메인)스레드가 화면을 그릴 수 있는 여유가 없음(응답없음 발생)
-        for i in range(0,1_000_000): #0 ~999,999
+        for i in range(0, 1_000_000): # 0 ~ 999,999
             print(f'노쓰레드 진행 >> {i}')
             self.pgbTask.setValue(i)
-            self.txbLog.append(f'노쓰레드 진행 >>{i}')
+            self.txbLog.append(f'노쓰레드 진행 >> {i}')
 
         self.btnStart.setEnabled(True)
 
